@@ -3,6 +3,7 @@ import { Avatar, Button, ButtonCell, Card, Cell, List, Section, Title } from "@t
 import { CardCell } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardCell/CardCell";
 import { CardChip } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardChip/CardChip";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
@@ -10,6 +11,7 @@ import { RiShieldUserLine } from "react-icons/ri";
 
 
 export default function Home() {
+  const router = useRouter();
   return (
     <main className="w-full h-full relative overflow-hidden">
       <header className="h-16 flex flex-row items-center bg-white px-2 py-2 w-full border-b border-x-slate-500">
@@ -18,7 +20,7 @@ export default function Home() {
           className="inline-block"
         >
           <Avatar
-            src="https://avatars.githubusercontent.com/u/84640980?v=4"
+            src="https://avatars.githubusercontent.com/u/21981665?v=4"
             size={40}
           />
         </div>
@@ -96,6 +98,7 @@ export default function Home() {
               }
             </Cell>
             <ButtonCell
+            onClick={()=>router.push('/orders/new')}
             before={<CiCirclePlus size={30} />}
             >
               ثبت سفارش
