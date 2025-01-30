@@ -8,14 +8,14 @@ import React from "react";
 export default function Home() {
   return (
     <main className="w-full h-full relative overflow-hidden">
-      <header className="h-18 flex flex-row items-center bg-white p-4 w-full border-b border-x-slate-500">
+      <header className="h-16 flex flex-row items-center bg-white px-2 py-2 w-full border-b border-x-slate-500">
         <div
 
           className="inline-block"
         >
           <Avatar
             acronym="ah"
-            size={48}
+            size={40}
           />
         </div>
         <div
@@ -23,7 +23,7 @@ export default function Home() {
 
         >
           <Title
-            level="3"
+            level="4"
             weight="3">
             {"Aqil"}
           </Title>
@@ -31,6 +31,7 @@ export default function Home() {
 
       </header>
       <div className="relative w-full h-full flex flex-col">
+        <div>
         <div className="mt-10 mb-4 flex justify-center items-center flex-col">
         <Title
           level="3"
@@ -66,7 +67,9 @@ export default function Home() {
 
         </div>
         </div>
-
+        </div>
+      
+        <div style={{direction:"rtl"}}>
         <List
           style={{
             background: 'var(--tgui--secondary_bg_color)',
@@ -76,29 +79,34 @@ export default function Home() {
           <Section>
             <Cell
               // before={<Icon32ProfileColoredSquare />}
-              subtitle="Manage ads and invoices"
+              subtitle="مدیریت سفارشات و فاکتورها"
             >
-              My Ads
+              {
+                "سفارش های من"
+              }
             </Cell>
             <ButtonCell
             // before={<Icon28AddCell />}
             >
-              Create Ad
+              ثبت سفارش
             </ButtonCell>
           </Section>
           <Section>
             <Cell
               // before={<Icon32ProfileColoredSquare />}
             >
-              Notifcations
+              تنظیمات
             </Cell>
             <Cell
               // before={<Icon32ProfileColoredSquare />}
             >
-              Notifcations
+              کانال رسمی ما
             </Cell>
           </Section>
         </List>
+        </div>
+
+
 
       </div>
     </main>
