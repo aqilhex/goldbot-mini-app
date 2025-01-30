@@ -4,6 +4,10 @@ import { CardCell } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card
 import { CardChip } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardChip/CardChip";
 import Image from "next/image";
 import React from "react";
+import { CiCirclePlus } from "react-icons/ci";
+import { FaUserCircle } from "react-icons/fa";
+import { RiShieldUserLine } from "react-icons/ri";
+
 
 export default function Home() {
   return (
@@ -14,7 +18,7 @@ export default function Home() {
           className="inline-block"
         >
           <Avatar
-            acronym="ah"
+            src="https://avatars.githubusercontent.com/u/84640980?v=4"
             size={40}
           />
         </div>
@@ -24,7 +28,7 @@ export default function Home() {
         >
           <Title
             level="4"
-            weight="3">
+            weight="2">
             {"Aqil"}
           </Title>
         </div>
@@ -32,17 +36,23 @@ export default function Home() {
       </header>
       <div className="relative w-full h-full flex flex-col">
         <div>
-        <div className="mt-10 mb-4 flex justify-center items-center flex-col">
+        <div className="mt-4 mb-4 flex justify-center items-center flex-col">
+        <img
+        width={85}
+      alt="Telegram sticker"
+      className="blt0jZBzpxuR4oDhJc8s"
+      src="https://em-content.zobj.net/source/telegram/386/money-bag_1f4b0.webp"
+    />
         <Title
           level="3"
           weight="3">
-          {"P2P Market"}
+          {"فروشگاه مجازی"}
         </Title>
         <div className="text-slate-500">
         <Title
           level=""
           weight="3">
-          {"خرید و فروش  طلا / دلار / تتر"}
+          {"خرید و فروش طلا، دلار، تتر"}
         </Title>
         </div>
         <div className="flex justify-between w-full my-4">
@@ -78,7 +88,7 @@ export default function Home() {
         >
           <Section>
             <Cell
-              // before={<Icon32ProfileColoredSquare />}
+              before={<RiShieldUserLine size={30} color="#008aff" />}
               subtitle="مدیریت سفارشات و فاکتورها"
             >
               {
@@ -86,7 +96,7 @@ export default function Home() {
               }
             </Cell>
             <ButtonCell
-            // before={<Icon28AddCell />}
+            before={<CiCirclePlus size={30} />}
             >
               ثبت سفارش
             </ButtonCell>
