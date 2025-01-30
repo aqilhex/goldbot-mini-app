@@ -38,85 +38,85 @@ export default function Home() {
       </header>
       <div className="relative w-full h-full flex flex-col">
         <div>
-        <div className="mt-4 mb-4 flex justify-center items-center flex-col">
-        <img
-        width={85}
-      alt="Telegram sticker"
-      className="blt0jZBzpxuR4oDhJc8s"
-      src="https://em-content.zobj.net/source/telegram/386/money-bag_1f4b0.webp"
-    />
-        <Title
-          level="3"
-          weight="3">
-          {"فروشگاه مجازی"}
-        </Title>
-        <div className="text-slate-500">
-        <Title
-          level=""
-          weight="3">
-          {"خرید و فروش طلا، دلار، تتر"}
-        </Title>
-        </div>
-        <div className="flex justify-between w-full my-4">
-          <div className="flex-1 justify-center pl-2 pr-1 items-center flex">
-          <Button
-  mode="gray"
-  size="l"
-  stretched
->
-  خرید
-</Button>
-          </div>
-          <div className="flex-1 justify-center  pl-1 pr-2 items-center flex">
-          <Button
-  mode="gray"
-  size="l"
-  stretched
->
-  فروش
-</Button>
-          </div>
+          <div className="mt-4 mb-4 flex justify-center items-center flex-col">
+            <img
+              width={85}
+              alt="Telegram sticker"
+              className="blt0jZBzpxuR4oDhJc8s"
+              src="https://em-content.zobj.net/source/telegram/386/money-bag_1f4b0.webp"
+            />
+            <Title
+              level="3"
+              weight="3">
+              {"فروشگاه مجازی"}
+            </Title>
+            <div className="text-slate-500">
+              <Title
+                level=""
+                weight="3">
+                {"خرید و فروش طلا، دلار، تتر"}
+              </Title>
+            </div>
+            <div className="flex justify-between w-full my-4">
+              <div className="flex-1 justify-center pl-2 pr-1 items-center flex">
+                <Button
+                  mode="gray"
+                  size="l"
+                  stretched
+                >
+                  خرید
+                </Button>
+              </div>
+              <div className="flex-1 justify-center  pl-1 pr-2 items-center flex">
+                <Button
+                  mode="gray"
+                  size="l"
+                  stretched
+                >
+                  فروش
+                </Button>
+              </div>
 
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-      
-        <div style={{direction:"rtl"}}>
-        <List
-          style={{
-            background: 'var(--tgui--secondary_bg_color)',
-            padding: 10
-          }}
-        >
-          <Section>
-            <Cell
-              before={<RiShieldUserLine size={30} color="#008aff" />}
-              subtitle="مدیریت سفارشات و فاکتورها"
-            >
-              {
-                "سفارش های من"
-              }
-            </Cell>
-            <ButtonCell
-            onClick={()=>router.push('/orders/new')}
-            before={<CiCirclePlus size={30} />}
-            >
-              ثبت سفارش
-            </ButtonCell>
-          </Section>
-          <Section>
-            <Cell
+
+        <div style={{ direction: "rtl" }}>
+          <List
+            style={{
+              background: 'var(--tgui--secondary_bg_color)',
+              padding: 10
+            }}
+          >
+            <Section>
+              <Cell
+                before={<RiShieldUserLine size={30} color="#008aff" />}
+                subtitle="مدیریت سفارشات و فاکتورها"
+              >
+                {
+                  "سفارش های من"
+                }
+              </Cell>
+              <ButtonCell
+                onClick={() => router.push('/orders/new')}
+                before={<CiCirclePlus size={30} />}
+              >
+                ثبت سفارش
+              </ButtonCell>
+            </Section>
+            <Section>
+              <Cell
               // before={<Icon32ProfileColoredSquare />}
-            >
-              تنظیمات
-            </Cell>
-            <Cell
+              >
+                تنظیمات
+              </Cell>
+              <Cell
               // before={<Icon32ProfileColoredSquare />}
-            >
-              کانال رسمی ما
-            </Cell>
-          </Section>
-        </List>
+              >
+                کانال رسمی ما
+              </Cell>
+            </Section>
+          </List>
         </div>
 
 

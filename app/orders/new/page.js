@@ -39,7 +39,16 @@ export default function Home() {
 
       </header>
       <div className="relative w-full h-full flex flex-col mb-[4rem]">
-
+        <div>
+          <div className="mt-4 mb-4 flex justify-center items-center flex-col">
+            <img
+              width={85}
+              alt="Telegram sticker"
+              className="blt0jZBzpxuR4oDhJc8s"
+              src="https://em-content.zobj.net/source/telegram/386/money-bag_1f4b0.webp"
+            />
+          </div>
+        </div>
         <div style={{ direction: "rtl" }}>
           <List
             style={{
