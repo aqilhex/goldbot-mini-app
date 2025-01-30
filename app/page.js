@@ -25,7 +25,7 @@ export default function Home() {
           <Title
             level="3"
             weight="3">
-            {"Aqilhex"}
+            {"Aqil"}
           </Title>
         </div>
 
