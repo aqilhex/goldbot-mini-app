@@ -45,7 +45,7 @@ export default function Home() {
               width={85}
               alt="Telegram sticker"
               className="blt0jZBzpxuR4oDhJc8s"
-              src="https://em-content.zobj.net/source/telegram/386/money-bag_1f4b0.webp"
+              src="https://em-content.zobj.net/source/telegram/386/money-with-wings_1f4b8.webp"
             />
           </div>
         </div>
