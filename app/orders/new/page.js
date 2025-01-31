@@ -39,7 +39,7 @@ export default function Home() {
 
       </header>
       <div className="relative w-full h-full flex flex-col mb-[4rem]">
-        <div>
+        {/* <div>
           <div className="mt-4 mb-4 flex justify-center items-center flex-col">
             <img
               width={85}
@@ -48,7 +48,7 @@ export default function Home() {
               src="https://em-content.zobj.net/source/telegram/386/money-with-wings_1f4b8.webp"
             />
           </div>
-        </div>
+        </div> */}
         <div style={{ direction: "rtl" }}>
           <List
             style={{
